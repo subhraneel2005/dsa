@@ -11,7 +11,6 @@ public class Loops {
 
         System.out.print("Enter your name: ");
         String name = input.nextLine();
-
         if (!name.isEmpty()) {
             for (int i = 0; i < num; i++) {
                 System.out.println("Kya re?" + " " + name + "\n");
@@ -19,7 +18,11 @@ public class Loops {
         } else {
             System.out.println("Name cannot be empty");
         }
-
         input.close();
+
+        int a = 10;
+        int b = 20;
+
+        System.out.println(Math.max(a, b));
     }
 }
