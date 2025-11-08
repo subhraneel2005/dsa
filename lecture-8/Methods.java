@@ -6,12 +6,15 @@ public class Methods {
 
         int modulusResult = modulus(1234, 10);
         System.out.println("Modulus result: " + modulusResult);
-
         String greeting = greeting("KelaChuda");
         System.out.println(greeting);
-
         char grade = grade(93);
         System.out.println("Grade: " + grade);
+
+    }
+
+    static int sum(int num1, int num2) {
+        return num1 + num2;
     }
 
     //method without return type and parameters
