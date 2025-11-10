@@ -5,17 +5,17 @@ import java.util.Scanner;
 public class Array {
 
     public static void main(String[] args) {
-        // primitive();
+        primitive();
         complex();
     }
 
     static void primitive() {
-        int[] ids = new int[3];
+        long[] ids = new long[3];
 
         Scanner inp = new Scanner(System.in);
         for (int i = 0; i < ids.length; i++) {
             System.out.print("Enter number " + (i + 1) + ": ");
-            ids[i] = inp.nextInt();
+            ids[i] = inp.nextLong();
         }
 
         System.out.println("Final array " + Arrays.toString(ids));
