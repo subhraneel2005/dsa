@@ -21,14 +21,21 @@ public class DailySales {
     static void findMinMax() {
         int min = dailySales[0];
         int max = dailySales[0];
+        float avg;
+        int totalSum = 0;
         for (int i = 0; i < dailySales.length; i++) {
+            totalSum += dailySales[i];
             if (dailySales[i] > max) {
                 max = dailySales[i];
             } else if (dailySales[i] < min) {
                 min = dailySales[i];
             }
         }
+
+        avg = totalSum / dailySales.length;
+
         System.err.println("Min: " + min);
         System.err.println("Max: " + max);
+        System.err.println("Average: " + avg);
     }
 }
