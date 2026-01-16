@@ -10,8 +10,12 @@ public class BsCeiling {
     }
 
     static int binarySearch(int arr[], int target) {
+
         int start = 0;
         int end = arr.length - 1;
+        if (target > arr[end]) {
+            return -1;
+        }
 
         while (start <= end) {
             int mid = start + (end - start) / 2;
