@@ -3,7 +3,7 @@ import java.util.Stack;
 public class ValidP {
 
     public static void main(String[] args) {
-        String s = "([])";
+        String s = "[){)}][([)]";
         System.out.println(checkInputString(s));
     }
 
